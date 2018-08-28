@@ -1,6 +1,6 @@
 {
   "name": "react-native-action-tips",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extremely simple tooltip popup written in Javascript for React Native.",
   "main": "index.js",
   "repository": {
