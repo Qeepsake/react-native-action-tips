@@ -1,0 +1,19 @@
+{
+  "name": "react-native-action-tips",
+  "version": "1.0.1",
+  "description": "Simple popup tips.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lukebrandonfarrell/react-native-action-tips.git"
+  },
+  "keywords": [
+    "tips"
+  ],
+  "author": "Luke Brandon Farrell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukebrandonfarrell/react-native-action-tips/issues"
+  },
+  "homepage": "https://github.com/lukebrandonfarrell/react-native-action-tips#readme"
+}
