@@ -1,14 +1,19 @@
 {
   "name": "react-native-action-tips",
   "version": "1.0.2",
-  "description": "Extremely simple tooltip popup writtin in Javascript for React Native.",
+  "description": "Extremely simple tooltip popup written in Javascript for React Native.",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/lukebrandonfarrell/react-native-action-tips.git"
   },
   "keywords": [
-    "tips"
+    "tips",
+    "react-native",
+    "tooltips",
+    "tooltip",
+    "popup",
+    "javascript"
   ],
   "author": "Luke Brandon Farrell",
   "license": "MIT",
