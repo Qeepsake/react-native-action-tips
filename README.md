@@ -4,7 +4,10 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-action-tips.svg?style=flat-square)](https://npmjs.org/package/react-native-action-tips)
 [![npm downloads](http://img.shields.io/npm/dt/react-native-action-tips.svg?style=flat-square)](https://npmjs.org/package/react-native-action-tips)
 
-Extremely simple tooltip popup writtin in Javascript for React Native.
+Extremely simple tooltip popup written in Javascript for React Native.
+
+  <img align="left" src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-action-tips/ios.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-action-tips/android.png" width="45%" />
 
 ## Install
 
@@ -37,6 +40,8 @@ someMethod() {
 The component includes a `show()` and `hide()` function
 
 The position of the component can be customised through the `position` prop by passing an object as such `{ top: 0, bottom: 0, left: 0, right: 0 }`. By default the component uses `"absolute"` positioning. This can be changed by passing style through the `actionTipStyle` prop.
+
+<img src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-action-tips/tip.png" width="45%" />
 
 ## Props
 
