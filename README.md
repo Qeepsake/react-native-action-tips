@@ -4,10 +4,7 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-action-tips.svg?style=flat-square)](https://npmjs.org/package/react-native-action-tips)
 [![npm downloads](http://img.shields.io/npm/dt/react-native-action-tips.svg?style=flat-square)](https://npmjs.org/package/react-native-action-tips)
 
-A highly interactive and customizable PIN code screen for React Native.
-
-- Plug and play PIN screen with dozens of props (can be themed to suit your brand).
-- Keyboard and PIN components can be used independently for more fine-grained customization.
+Extremely simple tooltip popup writtin in Javascript for React Native.
 
 ## Install
 

@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  TouchableWithoutFeedback,
-  Animated,
-  Text,
-  Platform
-} from "react-native";
+import { TouchableWithoutFeedback, Animated, Text } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./style";
 
