@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  defaultActionTipxxsStyle: {
+  defaultActionTipStyle: {
     position: "absolute",
     padding: 20,
     paddingTop: 14,
