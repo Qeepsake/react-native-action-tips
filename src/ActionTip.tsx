@@ -42,14 +42,9 @@ const ActionTip = React.forwardRef((props : IProps, ref) => {
     const [isVisible, setIsVisible] = useState(visible);
     const [actionTipText, setActionTipText] = useState(text);
     /* Effects */
-    useEffect(() => {
-      return () => clear()
-    }, []);
+    // Manages the action tip visibility
     useEffect(() => {
       if(isVisible){
-        // Clear the timer (Reset)
-        clear();
-
         // Animate the tip to the specified opacity
         Animated.timing(opacityAnimation.current, {
           toValue: opacity,
@@ -67,7 +62,11 @@ const ActionTip = React.forwardRef((props : IProps, ref) => {
           duration: animationOutDuration
         }).start();
       }
+
+      return () => clear();
     }, [isVisible]);
+    // Allows declarative usage of action tip using props
+    useEffect(() => setIsVisible(visible), [visible]);
     // Used to handle function reference
     useImperativeHandle(ref, () => ({
       show: (message : string) => show(message),
