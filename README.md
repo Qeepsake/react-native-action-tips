@@ -33,7 +33,7 @@ const actionTipRef = useRef(null);
 />
 
 someMethod() {
-  this.actionTip.show("Link has been copied");
+  actionTipRef.current.show("Link has been copied");
 }
 
 ```
@@ -61,7 +61,7 @@ The position of the component can be customised through the `position` prop by p
 
 | Prop            | Type          | Optional  | Default              | Description                                                                             |
 | --------------- | ------------- | --------- | -------------------- | --------------------------------------------------------------------------------------- |
-| ref           | string        | No        |                      | ref allows you to call the `show()` and `hide()` methods.                             |
+| ref           | string        | Yes        |                      | ref allows you to call the `show()` and `hide()` methods.                             |
 | text            | string        | Yes        |                      | Text which is displayed inside the action tip.     
 | visible         | boolean        | Yes        |                      | Controls the tooltip visibility.                |
 | duration        | number        | Yes       | 2000 ms              | Duration until the action tip dismisses.                                                |
@@ -71,7 +71,7 @@ The position of the component can be customised through the `position` prop by p
 | position        | object        | Yes       | 0                    | Absolute positioning of the component.                                                  |                                 |
 | containerStyle  | style         | Yes       |                      | Style applied to the action tip container.                                              |
 | textStyle   | style    | Yes       |                      | Style applied to the action tip text.                                                   |
-
+| onHide   | function    | Yes       |                      | Callback when tooltip is hidden                                                   |
 ## Contributing
 
 If you want to issue a PR, go ahead ;)

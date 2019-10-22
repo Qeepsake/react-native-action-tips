@@ -9,6 +9,8 @@ import { TouchableWithoutFeedback, Animated, Text } from "react-native";
 /* Config - Local Configuration */
 import styles from "./style";
 
+type HideFunction = () => void;
+
 interface AbsolutePosition {
   top?: number,
   bottom?: number,
@@ -26,6 +28,7 @@ interface IProps {
   animationOutDuration: number,
   containerStyle?: object,
   textStyle?: object,
+  onHide?: HideFunction,
 }
 
 const ActionTip = React.forwardRef((props : IProps, ref) => {
@@ -33,7 +36,7 @@ const ActionTip = React.forwardRef((props : IProps, ref) => {
     const opacityAnimation = useRef(new Animated.Value(0));
     const actionTipTimer = useRef<NodeJS.Timeout | null>(null);
     /* Props */
-    const { text, visible, position, opacity, duration, animationInDuration, animationOutDuration, containerStyle, textStyle } = props;
+    const { text, visible, position, opacity, duration, animationInDuration, animationOutDuration, containerStyle, textStyle, onHide } = props;
     const { top, bottom, left, right } = position;
     /* State */
     const [isVisible, setIsVisible] = useState(visible);
@@ -106,7 +109,10 @@ const ActionTip = React.forwardRef((props : IProps, ref) => {
   /**
    * Method to hide the popup
    */
-  function hide() { setIsVisible(false) }
+  function hide() { 
+    if(onHide) onHide();
+    setIsVisible(false) 
+  }
 
   /**
    * Method to clear the timer
