@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "codeandgabe",
+      "name": "Gabriel Ribeiro",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/30446226?v=4",
+      "profile": "https://github.com/codeandgabe",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "react-native-action-tips",
+  "projectOwner": "aspect-apps",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
