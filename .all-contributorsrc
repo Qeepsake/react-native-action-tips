@@ -6,6 +6,15 @@
   "commit": false,
   "contributors": [
     {
+      "login": "lukebrandonfarrell",
+      "name": "Luke Brandon Farrell",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/18139277?v=4",
+      "profile": "http://www.lukebrandonfarrell.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
       "login": "codeandgabe",
       "name": "Gabriel Ribeiro",
       "avatar_url": "https://avatars3.githubusercontent.com/u/30446226?v=4",

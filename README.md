@@ -96,6 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="http://www.lukebrandonfarrell.com"><img src="https://avatars3.githubusercontent.com/u/18139277?v=4" width="100px;" alt=""/><br /><sub><b>Luke Brandon Farrell</b></sub></a><br /><a href="https://github.com/aspect-apps/react-native-action-tips/commits?author=lukebrandonfarrell" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/codeandgabe"><img src="https://avatars3.githubusercontent.com/u/30446226?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Ribeiro</b></sub></a><br /><a href="https://github.com/aspect-apps/react-native-action-tips/issues?q=author%3Acodeandgabe" title="Bug reports">🐛</a></td>
   </tr>
 </table>
