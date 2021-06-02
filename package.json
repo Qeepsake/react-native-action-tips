@@ -10,7 +10,11 @@
   },
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\""
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "pre-commit": "lint-staged",
+    "postinstall": "husky install"
   },
   "keywords": [
     "tips",
@@ -27,10 +31,14 @@
   },
   "homepage": "https://github.com/lukebrandonfarrell/react-native-action-tips#readme",
   "devDependencies": {
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.2",
-    "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "pinst": "^2.1.6",
+    "prettier": "^1.19.1",
+    "semantic-release": "^17.4.3",
+    "typescript": "^3.9.9"
   },
   "hooks": {
     "pre-commit": "tsc && lint-staged"
